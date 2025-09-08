@@ -1,6 +1,6 @@
 import secrets
 
-def gen_key(bits: int = 2048):
+def gen_prime(bits: int = 2048):
 
     """
     secrets.randbits(bits) gera um numero aleatorio com a quantidade de bits especficada
