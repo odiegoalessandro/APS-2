@@ -16,6 +16,6 @@ Implementação do algoritmo RSA do zero, utilizando apenas a biblioteca padrão
 
 ```bash
 git clone https://github.com/odiegoalessandro/APS-2.git
-cd projeto-rsa
+cd APS-2
 python3 main.py
 ```
