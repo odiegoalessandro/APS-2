@@ -1,13 +1,14 @@
 import secrets
 
-def gen_prime(bits: int = 2048):
+from miller_rabin_test import miller_rabin_test
 
-    """
-    secrets.randbits(bits) gera um numero aleatorio com a quantidade de bits especficada
-    | (1 << (bits - 1)) garante que o bit mais significativo seja 1 (garante o tamnho correto do numero)
-    | 1 garante que o o bit menos significativo seja 1 (garante que o numero seja impar)
-    """
-    candidate = secrets.randbits(bits) | (1 << (bits - 1)) | 1
 
-    # TODO: implementar um looping para testar os candidatos até encontrar um primo
-    
+def gen_prime(bits: int = 2048): 
+    while True:
+
+        candidate = secrets.randbelow(
+            (1 << bits) - (1 << (bits - 1))) + (1 << (bits - 1)) | 1
+
+        if miller_rabin_test(candidate):
+            return candidate
+
