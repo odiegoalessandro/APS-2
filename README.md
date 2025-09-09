@@ -1,14 +1,14 @@
-# APS(Atividade pratica supervisionada) do 2° semestre - UNIP(Universidade Paulista) Sorocaba
+# RSA Python
 
-Implementação do algoritmo RSA do zero, utilizando apenas a biblioteca padrão do Python.
+Implementação do **algoritmo RSA** do zero usando apenas a **biblioteca padrão do Python**.
 
 ## Funcionalidades
 
-- Geração de chaves (pública e privada).
-- Criptografia de mensagens.
-- Descriptografia de mensagens.
+- Geração de chaves pública e privada
+- Criptografia de mensagens
+- Descriptografia de mensagens
 
-## Pré-requisitos
+## Requisitos
 
 - Python 3.8+
 
@@ -17,5 +17,8 @@ Implementação do algoritmo RSA do zero, utilizando apenas a biblioteca padrão
 ```bash
 git clone https://github.com/odiegoalessandro/APS-2.git
 cd APS-2
-python3 main.py
 ```
+
+## Observação
+
+- Este projeto é um projeto com fins educacionais, não deve ser usado para qualquer fim que não seja este.
