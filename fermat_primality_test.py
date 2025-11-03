@@ -1,6 +1,10 @@
+
+# Primeira Parte do Programa - garantia de números primos para a geração de chave
+
+# Importação da classe tuple(estrutura de dado similar a uma lista) diretamente do módulo typing do python
 from typing import Tuple
 
-
+# definição da função "teste de primalidade de fermet", algorítmo usado com intuito de determinar se um número é provavelmente primo
 def fermat_primality_test(n: int, a: int) -> Tuple[bool, int]:
     if n == 2 or n == 3:
         return True, -1  # nenhuma testemunha necessaria
